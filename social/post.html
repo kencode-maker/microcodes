@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Pod Talk - Free Bootstrap 5 CSS Template</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+                        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+        <link href="css/templatemo-pod-talk.css" rel="stylesheet">
+        
+<!--
+
+TemplateMo 584 Pod Talk
+
+https://templatemo.com/tm-584-pod-talk
+
+-->
+    </head>
+    
+    <body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script type="text/javascript"  >
+
+send_post();
+function send_post()
+ { 
+ 
+ event.preventDefault();
+ 
+ 
+// var user_name=post_user_name;
+  //var profile_src=post_profile_src;
+  
+  var user_name="kenias nyandoro";
+ var profile_src="keny.jpg";
+  var story= $("#stor").val();
+  var fil= $("#post_file")[0];
+ var file2 = fil.files[0];
+alert(story);
+  var fom3 = new FormData();
+  
+ fom3.append("user_name", user_name);
+ fom3.append("profile_src", profile_src);
+ fom3.append("story", story);
+   fom3.append("image", file2);
+
+	
+ 
+//var form = $("#sign_up_form").serialize();
+ 
+$.ajax({
+        type: 'POST' ,
+		enctype: 'multipart/form-data',
+        url: "send_post.php" ,
+        data: fom3,
+        
+		contentType: false,
+		processData: false,
+		
+		beforeSend: function(){  alert("sending ");
+		
+		},
+		
+        success:function(data){
+		
+            alert(data); 
+			
+        }
+				      
+     });
+	 
+	 
+ }
+
+
+
+
+
+</script>
+
+<nav class="navbar navbar-expand-lg" >
+                <div class="container" style=" background-color:rgb(5, 49, 78);">
+                    <a class="navbar-brand me-lg-5 me-0" href="index.html">
+                        <img src="images/pod-talk-logo.png" class="logo-image img-fluid" alt="templatemo pod talk">
+                    </a>
+
+                    <form action="#" method="post" class="custom-form search-form flex-fill me-3" role="search">
+                        <div class="input-group input-group-lg">    
+                            <input name="search" type="search" class="form-control" id="search" placeholder="Search Podcast" aria-label="Search">
+
+                            <button type="submit" class="form-control" id="submit">
+                                <i class="bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto" id="navbar_mobile">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " href="users.html">Users</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="post.html" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Post</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">story</a></li>
+
+                                    <li><a class="dropdown-item" href="#">Project</a></li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">Profile</a>
+                            </li>
+                        </ul>
+
+                        <div class="ms-4">
+                            <a href="login.html" class="btn custom-btn custom-border-btn smoothscroll">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+ <section class="contact-section section-padding pt-0" style="margin-top:160px;">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="section-title-wrap mb-5">
+                                <h4 class="section-title">Upload</h4>
+                            </div>
+
+                            <form action="#" method="post" enctype="multipart/form-data" class="custom-form contact-form" role="form">
+                                <div class="row">
+                                   
+
+                                
+                                        <div class="form-floating">
+                                            <textarea class="form-control"  name="story"   id="stor"   placeholder="Describe message here"></textarea>
+                                            
+                                            <label for="floatingTextarea">Describe message here</label>
+                                        </div>
+										
+										
+
+										
+										
+										 <div class="col-lg-12 col-12">
+                                        <div class="form-floating" >
+                                            <input type="file" name="image" id="post_file" class="form-control"  />
+                                            
+                                           
+                                        </div>
+                                    </div>
+									
+									
+									
+									 <div  style="float:left;">
+                                        <button type="submit" class="form-control" onclick="send_post()">Submit</button>
+                                    </div>
+									
+									
+									
+										
+                                    </div>
+
+                                   
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+       
+
+       
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>

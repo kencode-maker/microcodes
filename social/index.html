@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Pod Talk - Free Bootstrap 5 CSS Template</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+                        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+        <link href="css/templatemo-pod-talk.css" rel="stylesheet">
+        
+<!--
+
+TemplateMo 584 Pod Talk
+
+https://templatemo.com/tm-584-pod-talk
+
+-->
+    </head>
+    
+    <body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="ajax.js">
+</script>
+
+
+
+<nav class="navbar navbar-expand-lg" >
+                <div class="container" style="background-color:rgb(5, 49, 78);">
+                    <a class="navbar-brand me-lg-5 me-0" href="index.html">
+                        <img src="images/pod-talk-logo.png" class="logo-image img-fluid" alt="templatemo pod talk">
+                    </a>
+
+                    <form action="#" method="get" class="custom-form search-form flex-fill me-3" role="search">
+                        <div class="input-group input-group-lg">    
+                            <input name="search" type="search" class="form-control" id="search" placeholder="Search Podcast" aria-label="Search">
+
+                            <button type="submit" class="form-control" id="submit">
+                                <i class="bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto" id="navbar_mobile">
+                            <li class="nav-item" onclick="fetch_posts()">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " href="users.html">Users</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Post</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="post.html">story</a></li>
+
+                                    <li><a class="dropdown-item" href="post.html">Project</a></li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">Profile</a>
+                            </li>
+                        </ul>
+
+                        <div class="ms-4">
+                            <a href="login.html" class="btn custom-btn custom-border-btn smoothscroll">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+
+        <main>
+
+
+
+            <section class="trending-podcast-section section-padding">
+			
+			
+                <div class="container">
+                    <div class="row" >
+					
+					
+					
+<div class="col-lg-8 col-12 mx-auto" id="posts_page" >
+                            <div class="pb-5 mb-5" id="posts_wrapper" >
+							
+	
+							<!--profile info start here-->
+                              <div class="custom-block-info" id="posts">
+							  <div class="profile-block d-flex" style="padding:5px;">
+							  <img src="images/profile/woman-posing-black-dress-medium-shot.jpg" class="profile-block-image img-fluid" alt=""> 
+							  <p> ' +a[i].name+  ' <strong>Influencer kenias nyandoro format the base</strong></p>
+							  </div>
+							  
+							  
+							  <!--posted info start here-->
+                                <p style="margin:2px;">Pod Talk HTML CSS Template is made by Bootstrap v5.2.2 framework. You are allowed to modify and use this template for your business websites.</p>
+
+ 
+
+                                <center><img src="images/image2.jpg" class="about-image  img-fluid" alt=""></center>
+								
+	<!--posted info start here-->
+
+
+
+<!--like comments info start here-->     <div class="custom-block-bottom d-flex justify-content-between mt-3">
+                                        <a href="#" class="bi-headphones me-1">
+                                            <span>100k</span>
+                                        </a>
+
+                                        <a href="#" class="bi-heart me-1">
+                                            <span>2.5k</span>
+                                        </a>
+
+                                        <a href="#" class="bi-chat me-1" onclick="send_comment_box()" >
+                                            <span>924k</span>
+                                        </a>
+                                    </div><hr><!--like comments ends here-->
+								
+							  
+							  
+							  
+							  </div><!--profile info ends here-->
+
+
+								
+								
+								
+								
+								
+													<!--send comment box starts here-->
+					<div id="comments_page" >
+
+<div id="page_header" > 
+	  <div class="profile-block d-flex" style=" padding:5px; height:100%; width:70%;float:left;">
+							  <img src="images/profile/woman-posing-black-dress-medium-shot.jpg"   style="height:50px; width:50px;"  class="profile-block-image img-fluid" alt=""> 
+							  <p><strong>Influencer kenias nyandoro format the base</strong></p>
+							  </div>
+ <h2 style="cursor:pointer;float:right;margin:10px;margin-right:20px;" onclick="close_send_comment_box()">X</h2> 
+ </div>
+
+<div id="page_content">
+<BR><BR>
+
+
+
+							<!--comment info start here-->
+                              <div class="custom-block-info" id="posts">
+							  <div class="profile-block d-flex" style="padding:5px;">
+							  <img src="images/profile/woman-posing-black-dress-medium-shot.jpg"   style="height:50px; width:50px;"  class="profile-block-image img-fluid" alt=""> 
+							  <p> ' +a[i].name+  ' <strong>Influencer kenias nyandoro format the base</strong></p>
+							  </div>
+		  
+							  <!--comment text here-->
+                                <p style="margin:2px;">Pod Talk HTML CSS Template is made by Bootstrap v5.2.2 framework. You are allowed to modify and use this template for your business websites.</p>
+
+							
+	<!--posted info start here-->
+
+				  
+							  </div><!--comment info ends here-->
+							  
+							  
+							  
+							  
+							  
+							<!--profile info start here-->
+                              <div class="custom-block-info" id="posts">
+							  <div class="profile-block d-flex" style="padding:5px;">
+							  <img src="images/profile/woman-posing-black-dress-medium-shot.jpg"   style="height:50px; width:50px;"  class="profile-block-image img-fluid" alt=""> 
+							  <p> ' +a[i].name+  ' <strong>Influencer kenias nyandoro format the base</strong></p>
+							  </div>
+		  
+							  <!--posted info start here-->
+                                <p style="margin:2px;">Pod Talk HTML CSS Template is made by Bootstrap v5.2.2 framework. You are allowed to modify and use this template for your business websites.</p>
+
+							
+	<!--posted info start here-->
+
+				  
+							  </div><!--profile info ends here-->
+							  
+							  
+							  
+							<!--profile info start here-->
+                              <div class="custom-block-info" id="posts">
+							  <div class="profile-block d-flex" style="padding:5px;">
+							  <img src="images/profile/woman-posing-black-dress-medium-shot.jpg"   style="height:50px; width:50px;"  class="profile-block-image img-fluid" alt=""> 
+							  <p> ' +a[i].name+  ' <strong>Influencer kenias nyandoro format the base</strong></p>
+							  </div>
+		  
+							  <!--posted info start here-->
+                                <p style="margin:2px;">Pod Talk HTML CSS Template is made by Bootstrap v5.2.2 framework. You are allowed to modify and use this template for your business websites.</p>
+
+							
+	<!--posted info start here-->
+
+				  
+							  </div><!--profile info ends here-->
+
+
+
+
+</div>
+
+<div id="page_footer">  <input type="text" placeholder="type here"    style="width:80%; float:left;" class="form-control" name="message"/> <button id="button_1"   class="form-control"   style="width:20%; float:left;"   onclick="send_message()">Send</button>     </div>
+
+</div>		<!--send comment box ends here-->
+								
+
+
+	
+                            </div><!--row div ends here-->
+                        </div><!-- posts page ends here container div ends here -->
+
+					
+					
+
+					
+
+       
+                       
+                        </div>
+                            </div>
+                       
+
+                 
+            </section>
+        </main>
+
+
+       
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>

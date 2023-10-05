@@ -1,0 +1,400 @@
+
+
+@media screen and (min-width:1101px){
+
+
+/* Navigation bar */
+body{background-color:rgb(230,230,250);margin:0px;o}
+#header_wrap{
+	position:fixed;top:0; left:0;width:100%;z-index:1;background-color:rgb(230,230,250);
+}
+header{width:70%;margin:auto;color:rgb(5, 49, 78);
+    font-family:'hp simplified light' , 'Arial Narrow', Arial, sans-serif; left:15%;}
+nav {
+    background-color:rgb(5, 49, 78);
+    overflow: hidden;font-family:hp simplified light;
+	text-align:center;	margin:auto;width:70%;
+}
+
+nav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#main_wrapper{
+position:absolute;top:100px;left:0px;width:100%;	z-index:0;
+}
+/* Main content */
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	width:70%;  height:400px;
+	
+	margin:auto;
+	padding:5px;
+}
+
+.main_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	width:70%;
+    height:400px;
+	margin:auto;
+	padding:5px;
+}
+.main_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	width:70%;
+    height:400px;
+	margin:auto;
+	padding:5px;
+}
+/* Left div */
+.left {
+    float: left;
+    margin-right: 20px;
+    width: 50%; color:rgb(5, 49, 78);
+    background-color:white; font-family:hp simplified light;
+}
+
+
+.left_2 {
+    float: left;
+    margin-right: 20px;
+    width: 50%;color:rgb(5, 49, 78);
+    background-color:white; font-family:hp simplified light;
+}
+
+
+.left_3 {
+    float: left;
+    margin-right: 20px;
+    width: 50%;color:rgb(5, 49, 78);
+    background-color:white; font-family:hp simplified light;
+}
+
+.right{width:49%; height:400px;
+    background-color:white;    color:rgb(5, 49, 78);  
+	background-image:url("ragga5.webp"); position:relative;
+}
+
+
+.right_2{width:49%;
+    color:rgb(5, 49, 78);  background-color:white;     overflow-y: auto;
+}
+.right_3{width:100%; color:rgb(5, 49, 78);  background-color:white;    
+}
+
+
+
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+#left_arrow{
+position:absolute;
+left:0%;top:50%;font-size:55px;background-color:white;	 cursor:pointer;
+}
+#right_arrow{
+position:absolute;
+right:0%;top:50%;	font-size:55px;background-color:white;	cursor:pointer;
+}
+
+.mySlides {
+   
+}
+#slide_1{
+	display:block;display:relative; width: 100%;
+	height:400px;animation:slide_left 0.6s ease-out;}
+#slide_2{
+	display:none; display:relative; width: 100%;
+	height:400px;animation:slide_left 0.6s ease-out;
+}
+#slide_3{
+	display:none; display:relative; width: 100%;
+	height:400px;animation:slide_left 0.6s ease-out;
+}
+#slide_4{
+	display:none; display:relative; width: 100%;
+	height:400px;animation:slide_left 0.6s ease-out;
+}
+#slide_5{
+	display:none; display:relative;
+	  width: 100%;
+	height:400px;text-align:center;animation:zoom 0.6s ease-in-out;
+}
+.mySlides img {
+    width: 100%;
+	height:400px;
+  
+}
+
+#slide_text{
+	margin:0px;position:absolute;top:0%;left:0%;width:100%;background-color:rgb(250,250,250);opacity:0.5;
+	
+	
+}
+
+
+.mySlides video {
+    width: 100%;
+	height:300px;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -22px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f2f2f2;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+
+.icon{
+    height: 20px;   border-radius: 50%; display: inline-block;
+width: 20px;
+}
+
+
+#overflow_wrap{
+	width:100%; color:rgb(5, 49, 78);  background-color:white;     overflow-x: auto;  overflow-y:none; 
+}
+
+.overflow_wrap{
+	width:150%;
+}
+
+#profile_image{
+	height:80px; width:80px;
+	border-radius:50%; float:left;
+	padding:5px;
+	}
+
+
+    #product{
+        padding:0px;margin:5px; border:1px solid rgb(5, 49, 78);    solid border-radius:7px; background-color:rgb(250,250,250);
+    font-family:hp simplified light;width:180px;height:330px;	position:relative;
+		float:left;
+    }
+
+
+    #product_image{
+       	height:200px; width:100%;
+	
+    }
+	
+    #product_info{
+        padding:5px;background-color:white;
+        overflow-y:hidden;margin:0px;
+       }
+	    #product_price{
+        padding:2px;background-color:white;
+        overflow-y:hidden;margin:0px;
+       }
+#buy_button{
+	float:right;margin:5px; padding:10px;border-radius:5px;
+       background-color:rgb(5, 49, 200);color:white;cursor:pointer;position:absolute;bottom:0px;
+}
+
+#item_header{width:100%;padding:0px; margin-top:0px;font-family:hp simplified light;
+    color:rgb(5, 49, 78);   background-color:white;
+    font-family:hp simplified light;
+}
+#item_header_2{font-family:hp simplified light;}
+#messages{
+height:320px;	overflow-y: auto;
+}
+#message{animation:zoom 0.6s ease-in-out;
+    padding:10px;margin:10px; border:1px solid rgb(5, 49, 78); border-radius:7px; background-color:rgb(200,230,250);
+    font-family:hp simplified light;width:80%;	overflow-y: auto;
+}
+#message_2{
+    padding:10px;margin:10px; border:1px solid rgb(5, 49, 78); border-radius:7px;  background-color:rgb(200,230,250);
+    font-family:hp simplified light;width:80%;height:120px;	overflow-y: auto;
+}
+#message_text{
+ width: 60%;float:left;padding:5px;margin:2px;
+}
+#input_wrapper{width:100%;padding:0px; margin-top:0px;font-family:hp simplified light;
+     color:white;background-color:rgb(5, 49, 78);}
+	 
+#input_section{
+    width:90%; margin:auto;  font-family:calibri;border-radius: 7px;padding:5px; position:absolute; bottom:0px;
+}
+#textbox{
+border:none;height:30px;
+width:70%; font-family:hp simplified light; 
+border-top-left-radius:7px;
+border-bottom-left-radius:7px; margin:10px;
+}
+
+#textbox2{
+border:none;height:60px;
+width:70%; font-family:hp simplified light; 
+border-top-left-radius:7px;
+border-bottom-left-radius:7px; margin:10px;
+}
+
+#textbox3{
+border:none;height:30px;
+width:70%; font-family:hp simplified light; 
+border-top-left-radius:7px;
+border-bottom-left-radius:7px; 
+}
+
+#button_1{background-color:rgb(5, 49, 250); color:white;
+    border:none;
+    height:32px;
+    width: 20%;
+    font-family:hp simplified light; font-weight: bold;
+    border-top-right-radius:7px;
+border-bottom-right-radius:7px;
+}
+
+#button_2{
+    border:none; margin:5px;padding: 5px;
+    height:32px;
+  
+    font-family:hp simplified light; font-weight: bold;
+    border-top-right-radius:7px;
+border-bottom-right-radius:7px;background-color: rgb(5, 49, 78); color:white;
+}
+
+
+
+#button_3{ margin:5px;padding: 5px;
+    border:none;
+    height:50px;
+    width: 200px;
+    font-family:hp simplified light; font-weight: bold; font-size:20px;
+    border-top-right-radius:7px;
+border-bottom-right-radius:7px;background-color: rgb(5, 49, 250); color:white;
+}
+
+
+#button_4{position:static;top:100px;
+    border:none;
+    height:30px;
+    width: 120px;
+    font-family:hp simplified light; font-weight: bold; font-size:20px;
+    border-top-right-radius:7px;
+border-bottom-right-radius:7px;background-color: rgb(5, 49, 78); color:white;
+}
+
+
+
+
+
+
+#footer_wrap{
+    width: 100%;  background-color:rgb(5, 49, 78);color:white;height:500px;
+}
+footer{
+	width:70%;
+   height: 100%;
+	margin:auto;
+    font-family:hp simplified light; }
+ul{
+text-decoration:none;	cursor:pointer;
+}
+li{
+  margin-top:10px;font-size: 20px; text-decoration:none;
+
+}
+#left_footer{
+    float: left;width: 45%;height: 100%;
+}
+#right_footer{
+    float: right;width: 35%; background-color: white;color:rgb(5, 49, 78);
+    height: 90%;border-radius: 10px; margin:20px; 
+}
+
+@keyframes slide_left{
+	from {
+		width:0%;
+	}
+	to{
+		width:100%;
+	}
+}
+
+@keyframes zoom{
+	from {
+	opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+#page_1{width:70%;height:84%;
+	position:fixed;top:10%;left:15%; border-radius:5px;
+	background-color:rgb(200,200,250);display:none;
+}
+#page_content{
+	text-align:center;width:100%;height:90%;overflow-y:auto;background-color:rgb(200,200,250);
+}
+input[type=file]{
+
+}
+input[type=file]::-webkit-file-upload-button{
+	background-color:rgb(10,50,250); color:white; height:100%;border:none;font-family:hp simplified light;font-weight:bolder;
+}
+#page_2{width:70%;height:84%;
+	position:fixed;top:10%;left:15%; border-radius:5px;
+	background-color:rgb(200,200,250);display:none;
+}
+#page_3{width:70%;height:84%;
+	position:fixed;top:10%;left:15%; border-radius:5px;
+	background-color:rgb(200,200,250);display:none;
+}
+#page_4{width:70%;height:84%;
+	position:fixed;top:10%;left:15%; border-radius:5px;
+	background-color:rgb(200,200,250);display:none;
+}
+#login{
+	
+}
+#sign_up{
+	display:none;
+}
